@@ -1,0 +1,193 @@
+*{
+margin: 0px;
+padding: 0px;
+text-decoration: none;
+list-style: none;
+box-sizing: border-box;
+transition: 0.5s;
+}
+
+.logo a{
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.list-item__name{
+    color: black;
+    font-size: 22px;
+}
+
+header{
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+:root{
+    --bg-color: black;
+    --text-color: white;
+}
+
+.active-black{
+    --bg-color: rgb(20, 17, 17);
+    --text-color: rgb(207, 207, 207);
+}
+
+.active-white{
+    --bg-color: white;
+    --text-color: black;
+}
+
+.active-blue{
+    --bg-color: blue;
+    --text-color: yellow;
+}
+
+.active-yellow{
+    --bg-color: yellow;
+    --text-color: white;
+}
+
+
+
+body{
+    background-color: var(--bg-color);
+}
+
+button{
+    cursor: pointer;
+}
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.dark-light-btn{
+    margin-right: 6%;
+}
+
+.active-darkBtn{
+    background-color: black;
+    border-radius: 50%;
+    padding: 20px;
+    border: none;
+    margin-right: 5px;
+}
+
+.active-ligthBtn{
+    background-color: white;
+    border-radius: 50%;
+    padding: 20px;
+    color: black;
+    border: none;
+    margin-right: 5px;
+}
+
+.active-blueBtn{
+    margin-right: 5px;
+    background-color: blue;
+    border-radius: 50%;
+    padding: 20px;
+    border: none;
+}
+
+.active-yellowBtn{
+    background-color: yellow;
+    border-radius: 50%;
+    padding: 20px;
+    margin-right: 5px;
+    border: none;
+}
+
+
+.sourc-template{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.list{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.list__item{
+    background-color: var(--bg-color);
+    padding: 10px;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.list-item-url{
+    background-color: green;
+    padding: 10px 40px;
+    border-radius: 15px;
+    color: white;
+}
+
+.list-item__name{
+    margin-top: 20px;
+    color: var(--text-color);
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.list-item__title{
+    color: var(--text-color);
+    text-align: center;
+    font-size: 12px;
+
+}
+
+.list-item__title{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.list-img{
+    width: 100%;
+}
+
+header {
+    padding: 20px;
+    background-color: aquamarine;
+}
+
+.mode-buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+body{
+    background-color: var(--bg-color);
+}
+
+@media(max-width:620px) {
+    .head{
+        justify-content: center;
+    }
+    .mode-buttons{
+        margin-left: 20px;
+        flex-wrap: nowrap;
+    }
+}
